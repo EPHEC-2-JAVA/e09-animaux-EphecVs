@@ -5,5 +5,9 @@ public class Programme {
         DataReportVisualizer drv = new DRVFricEnVrac();
         String result = drv.formatData();
         System.out.println(result);
+
+        DataReportVisualizer drv2 = new DRVFricEnVrac();
+        String result2 = drv2.formatData();
+        System.out.println(result2);
     }
 }

@@ -4,22 +4,22 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        Animal[] nvtab = createTable();
-        for(Animal v : nvtab){
+        Animal[] testAnimaux = createTable();
+        for(Animal v : testAnimaux){
             v.makeNoise();
         }
     }
 
     public static Animal[] createTable(){
-        Animal[] tableauAnimal = new Animal[10];
+        Animal[] animaux = new Animal[10];
         Random alea = new Random();
 
-        for(int i = 0 ; i < tableauAnimal.length ; i++){
+        for(int i = 0 ; i < animaux.length ; i++){
             if(alea.nextInt(10) < 5){
-                tableauAnimal[i] = new Cat();
+                animaux[i] = new Cat();
             }
-            else tableauAnimal[i] = new Dog();
+            else animaux[i] = new Dog();
         }
-        return tableauAnimal;
+        return animaux;
     }
 }
